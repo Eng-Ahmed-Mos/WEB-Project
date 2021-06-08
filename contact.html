@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The GYM - About</title>
+    <link rel="stylesheet" href="./css/widescreen.css" media="screen and (min-width: 1100px)">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 768px)">
+
+</head>
+
+<body id="home">
+  
+  <!-- Navbar -->
+  <nav  id="navbar" class="bg-dark">
+      <div class="logo">
+        <a href="#home"><img src="./img/logo.png" alt="GYM Logo"></a>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+  
+  <div class="container">
+          
+    <form id="myform" action="index.html" method="post" onsubmit="return validation()" autocomplete="on" >
+
+
+      <div class="inputBox">
+          <input name="fname" type="text" placeholder="First name" id="user" class="control" required>
+          <input name="lname" type="text" placeholder="last name" id="user2" class="control" required>
+          <input name="email" type="email" id="email" class="control" placeholder="email" required>
+          <input  name="number" type="tel" id="mobile" class="control" placeholder="mobile phone number" pattern="[0-9]{11}"  required>
+          <input  name="password"type="password" id ="pass" class="control" placeholder="password" required>
+          <input name="passward" type="password" placeholder="confirm passward" id="conpass" class="control" >
+      </div>
+
+  
+          
+     
+     
+
+      <textarea placeholder="Your order.." name="address" id="" cols="30" rows="10" required></textarea>
+      
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label><br>
+      
+
+      <input type="submit" value="order now" class="btn" id="submit" >
+
+        </form>
+    </div>
+  <script src="js/main.js"></script>
+
+  <footer class="text-center py-1 bg-dark">
+    <p>Copyright &copy; 2020, The GYM, All Rights Reserved</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/f5264f338f.js" crossorigin="anonymous"></script>
+
+</body>
